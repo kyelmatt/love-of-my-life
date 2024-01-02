@@ -32,6 +32,7 @@ body {
   
   .project-title {
     font-size: 20px;
+    font-weight: 600;
     margin-top: 10px;
     text-align: center;
     overflow: hidden;
@@ -42,6 +43,7 @@ body {
 
   .project-title a {
     text-decoration: none;
+    color: black;
   }
   
   .container-project {
@@ -98,3 +100,25 @@ body {
     white-space: nowrap;
     color: black;
   }
+
+  .t1 {
+    border-collapse: collapse;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+  }
+
+  .t2 {
+    border-collapse: collapse;
+    width: 100%;
+    position: absolute;
+    top: 196%;
+  }
+  
+  table img {
+    max-width: 100%; /* Set a specific maximum width for the images */
+    height: auto; /* Maintain the aspect ratio */
+  }
+table td {
+  size: small;
+}
