@@ -40,3 +40,15 @@ table img {
 table td {
   size: small;
 }
+
+@media only screen and (max-width: 420px) {
+  .table {
+    left: 6%;
+  }
+  .t1 {
+    top: 50%;
+  }
+  .t2 {
+    top: 100%;
+  }
+}
