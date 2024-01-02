@@ -46,14 +46,6 @@ header {
         font-size: 25px; /* Adjust font size for smaller screens */
     }
 
-    header {
-        padding: 0.5em;
-    }
-
-    main {
-        padding: 10px;
-    }
-
     .text {
         align-items: normal;
         width: 85%;
