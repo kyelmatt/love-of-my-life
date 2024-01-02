@@ -43,9 +43,9 @@ table td {
 
 @media only screen and (max-width: 420px) {
   .t1 {
-    top: 58%;
+    top: 55%;
   }
   .t2 {
-    top: 93%;
+    top: 100%;
   }
 }
