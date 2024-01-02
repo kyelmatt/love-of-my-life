@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Love of my Life</title>
+</head>
+
+<body>
+    <div class="text">
+        <p id="typedText"></p>
+    </div>
+
+    <script>
+        // JavaScript code for the delayed typing effect
+        const textElement = document.getElementById('typedText');
+        const textContent = "i love you";
+        const delayBeforeTyping = 1000; // 1000 milliseconds (1 second) delay before typing
+
+        function typeText() {
+            let index = 0;
+            function addNextCharacter() {
+                if (index < textContent.length) {
+                    textElement.innerHTML += textContent.charAt(index);
+                    index++;
+                    setTimeout(addNextCharacter, 100); // Adjust the typing speed (100 milliseconds)
+                }
+            }
+
+            // Start typing after the initial delay
+            setTimeout(() => {
+                addNextCharacter();
+            }, delayBeforeTyping);
+        }
+
+        // Call the typing function
+        typeText();
+    </script>
+
+</body>
+
+</html>
