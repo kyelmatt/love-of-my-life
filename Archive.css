@@ -16,7 +16,7 @@ h1 {
   width: 100%;
   position: absolute;
   top:13%;
-  left: 7%;
+  text-align: center;
 }
 
 .t1 {
@@ -42,9 +42,6 @@ table td {
 }
 
 @media only screen and (max-width: 420px) {
-  table {
-    left: 0%;
-  }
   .t1 {
     top: 58%;
   }
