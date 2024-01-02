@@ -56,5 +56,6 @@ header {
 
     .text {
         align-items: normal;
+        width: 85%;
     }
 }
