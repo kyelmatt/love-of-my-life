@@ -1,0 +1,56 @@
+body {
+    font-family: Georgia;
+    background: url("resources/maincover.png");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+.text {
+    padding: 8px;
+    padding-top: 10px;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.text p::after {
+    content: "|";
+    animation: blink-caret 0.75s infinite alternate;
+}
+
+@keyframes blink-caret {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+
+@media only screen and (max-width: 420px) {
+    body {
+        background-size: cover;
+        font-size: 25px; /* Adjust font size for smaller screens */
+    }
+
+    header {
+        padding: 0.5em;
+    }
+
+    main {
+        padding: 10px;
+    }
+}

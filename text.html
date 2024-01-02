@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="text.css">
     <title>Love of my Life</title>
 </head>
 
@@ -16,16 +16,36 @@
     <script>
         // JavaScript code for the delayed typing effect
         const textElement = document.getElementById('typedText');
-        const textContent = "i love you";
+        const textContent = `Genelle,
+    
+    Love is something I have always sought throughout my college life, and I have consistently been the one looking for it. I always stand with "mahal ko" instead of "mahal ako," not until you came into my life.
+    
+    For years, I have been single, mingling with multiple girls, breaking my heart several times. Yet, I learned a lot from those experiences. You, Genelle, are an exception.
+    
+    Over the past five months, I have constantly been learning new things about academics, life, and specially about you. I enjoy the non-stop talk shows, rants, sudden burst of emotions, and everything that we do together. I just enjoy being with you and would love to be involved in your everyday life even more.  
+    
+    If I were to be honest with you, I thought I would fall out of love and break your heart. Talking about academics isn't inherently romantic, yet I enjoy the time we spend together, stressing over our academics, and I would love to do it with you over and over again. As I've said before, Nelle, I can learn how to love a person. During the holiday break, we were able to get to know each other deeply, say the things we couldn't say before, and so it happened. I had fallen.
+    
+    You are the very first lover I've had in a long time. I love you so much for appreciating me and for always making me feel loved.
+    
+    Genelle, I want us to start this new year with a new phase. Remember that I promised you a label, a label that would officially make us partners. With that, I want to give you my utmost love, loyalty, appreciation, care, and all the positive adjectives you can think of.`;
+
         const delayBeforeTyping = 1000; // 1000 milliseconds (1 second) delay before typing
+        const delayBeforeRedirect = 4500;
 
         function typeText() {
             let index = 0;
             function addNextCharacter() {
                 if (index < textContent.length) {
-                    textElement.innerHTML += textContent.charAt(index);
+                    textElement.innerText += textContent.charAt(index);
                     index++;
-                    setTimeout(addNextCharacter, 100); // Adjust the typing speed (100 milliseconds)
+                    setTimeout(addNextCharacter, 70); // Adjust the typing speed (20 milliseconds)
+                } else {
+                    // Text content is finished, initiate redirection after a delay
+                    setTimeout(() => {
+                        // Redirect to the next page
+                        window.location.href = 'final.html'; // Replace 'next_page.html' with the actual URL of the next page
+                    }, delayBeforeRedirect);
                 }
             }
 
@@ -38,6 +58,7 @@
         // Call the typing function
         typeText();
     </script>
+
 
 </body>
 
